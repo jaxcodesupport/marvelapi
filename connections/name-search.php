@@ -7,8 +7,8 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ($_SERVER['HTTP_X_REQUESTED_WITH
     $name_to_search = htmlentities(strtolower($_GET['name'])); // HuLk == hulk
 
     $ts = time();
-    $public_key = 'd5f0f5449bd3c02b3efa96222131c286';
- 	$private_key = '8d5642f6a655623694ef15d167bab320550adeed';
+    $public_key = '<!-- Your Public Key Here --';
+ 	$private_key = '<!-- Your Private Key Here --';
     $hash = md5($ts . $private_key . $public_key);
 
     $query = array(
